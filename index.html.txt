@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>معرض الكورسات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>معرض الكورسات</h1>
+
+<div class="courses">
+
+    <div class="card">
+        <img src="images/course1.jpg">
+        <h3>كورس HTML</h3>
+        <p>تعلم أساسيات HTML من الصفر.</p>
+        <a href="course1.html">عرض التفاصيل</a>
+    </div>
+
+    <div class="card">
+        <img src="images/course2.jpg">
+        <h3>كورس CSS</h3>
+        <p>تعلم تنسيق الصفحات باحتراف.</p>
+        <a href="course2.html">عرض التفاصيل</a>
+    </div>
+
+    <div class="card">
+        <img src="images/course3.jpg">
+        <h3>كورس UI/UX</h3>
+        <p>أساسيات تصميم الواجهات.</p>
+        <a href="course3.html">عرض التفاصيل</a>
+    </div>
+
+    <div class="card">
+        <img src="images/course4.jpg">
+        <h3>كورس GitHub</h3>
+        <p>تعلم إدارة المشاريع ورفعها.</p>
+        <a href="course4.html">عرض التفاصيل</a>
+    </div>
+
+</div>
+
+</body>
+</html>

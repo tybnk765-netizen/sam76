@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تفاصيل كورس HTML</title>
+</head>
+<body>
+
+<h1>تفاصيل كورس HTML</h1>
+
+<p>هذا شرح بسيط عن كورس HTML.</p>
+
+<a href="index.html">العودة للصفحة الرئيسية</a>
+
+</body>
+</html>
