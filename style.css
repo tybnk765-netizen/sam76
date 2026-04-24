@@ -1,85 +1,106 @@
-* {
-  box-sizing: border-box;
-  font-family: Arial;
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:Arial;
+  background:linear-gradient(135deg,#0f172a,#1e293b,#020617);
+  color:white;
 }
 
-body {
-  margin: 0;
-  text-align: center;
-  background: #f4f6f8;
+/* هيدر */
+header{
+  padding:20px;
+  text-align:center;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
 }
 
-h1 {
-  margin: 20px;
+/* مقدمة */
+.hero{
+  text-align:center;
+  padding:50px 20px;
+  animation:fadeIn 1s;
 }
 
-.courses {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
+/* شبكة */
+.courses{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  padding:30px;
 }
 
-.card {
-  width: 220px;
-  background: white;
-  padding: 10px;
-  border-radius: 12px;
-  text-decoration: none;
-  color: black;
-  transition: 0.3s;
+/* كرت */
+.card{
+  background:rgba(255,255,255,0.05);
+  border-radius:15px;
+  overflow:hidden;
+  backdrop-filter:blur(10px);
+  transition:0.4s;
 }
 
-.card:hover {
-  transform: scale(1.05);
+.card:hover{
+  transform:translateY(-10px) scale(1.03);
 }
 
-.card img {
-  width: 100%;
-  border-radius: 10px;
+.card img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
 }
 
-iframe {
-  width: 500px;
-  height: 280px;
-  border-radius: 10px;
-  margin-top: 10px;
+.content{padding:15px}
+
+.btn{
+  display:block;
+  margin-top:10px;
+  padding:10px;
+  background:linear-gradient(45deg,#3b82f6,#9333ea);
+  text-align:center;
+  border-radius:10px;
+  color:white;
+  text-decoration:none;
 }
 
-p {
-  width: 70%;
-  margin: 20px auto;
+/* صفحة الكورس */
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+  animation:fadeIn 1s;
 }
 
-.back {
-  display: inline-block;
-  margin: 20px;
-  padding: 10px 20px;
-  background: black;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
+iframe{
+  width:100%;
+  height:350px;
+  border-radius:12px;
+  margin:20px 0;
 }
 
-/* 📱 Responsive */
-@media (max-width: 768px) {
+/* صناديق */
+.box{
+  background:rgba(255,255,255,0.05);
+  padding:15px;
+  margin:15px 0;
+  border-radius:12px;
+}
 
-  .courses {
-    flex-direction: column;
-    align-items: center;
-  }
+/* نجوم */
+.stars{
+  color:gold;
+  font-size:20px;
+  margin:10px 0;
+}
 
-  .card {
-    width: 90%;
-  }
+/* تعليق */
+.comment{
+  background:#1e293b;
+  padding:10px;
+  border-radius:8px;
+  margin-top:10px;
+}
 
-  iframe {
-    width: 90%;
-    height: 200px;
-  }
-
-  p {
-    width: 90%;
-  }
+/* أنيميشن */
+@keyframes fadeIn{
+  from{opacity:0}
+  to{opacity:1}
 }
